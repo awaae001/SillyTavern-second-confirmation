@@ -1,33 +1,52 @@
-# SillyTavern Extension Example
+# SillyTavern Second Confirmation
 
-*Provide a brief description of how your extension works, what problem it aims to solve.*
+A small SillyTavern extension for adding a second confirmation popup to buttons.
 
-## Features
+It intercepts configured button clicks, asks the user to confirm, and only continues the original click after confirmation.
 
-*Describe some of the main selling points of your extension.*
 
-## Installation and Usage
+## Default Rules
 
-### Installation
+The extension currently ships with confirmation rules for branch creation:
 
-*In most cases, this should just be using ST's inbuilt extension installer.* 
+- chat message **Create Branch** button;
+- alternate reply editor / swipe picker **Create Branch** button.
 
-### Usage
+## Installation
 
-*Explain how to use this extension.*
+Install it as a third-party SillyTavern extension:
 
-## Prerequisites
+1. Open **Extensions** in SillyTavern.
+2. Use **Install extension**.
+3. Enter this repository URL:
 
-*Specify the version of ST necessary here.*
+   ```text
+   https://github.com/awaae001/SillyTavern-second-confirmation
+   ```
 
-## Support and Contributions
+4. Reload SillyTavern after installation.
 
-*Where should someone ask for support?*
+## Usage
 
-*Consider including your own contact info for help/questions.*
+After the extension is loaded, configured buttons will ask for confirmation before their original action runs.
 
-*How can people help add to this extension?*
+To disable or enable the behavior:
+
+1. Open **Extensions** settings.
+2. Find **Second Confirmation**.
+3. Toggle **Enable branch creation confirmation**.
+
+## How It Works
+
+The extension listens for matching click events during the browser capture phase.
+
+When a configured button is clicked:
+
+1. the original click is stopped;
+2. a confirmation popup is shown;
+3. if confirmed, the click is replayed once;
+4. the replayed click is allowed through without another confirmation.
 
 ## License
 
-*Be cool, use an open source license.*
+MIT
