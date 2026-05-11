@@ -1,1 +1,10 @@
-/* All style elements for your extension go here */
+.second-confirmation-toggle {
+    align-items: center;
+    gap: 0.5em;
+}
+
+.second-confirmation-hint {
+    opacity: 0.8;
+    font-size: calc(var(--mainFontSize) * 0.9);
+    margin: 0.5em 0;
+}
