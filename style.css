@@ -8,3 +8,9 @@
     font-size: calc(var(--mainFontSize) * 0.9);
     margin: 0.5em 0;
 }
+
+.second-confirmation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}

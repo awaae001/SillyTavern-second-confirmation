@@ -1,11 +1,14 @@
 {
     "display_name": "Second_confirmation",
+    "i18n": {
+        "zh-cn": "i18n/zh-cn.json"
+    },
     "loading_order": 9,
     "requires": [],
     "optional": [],
     "js": "index.js",
     "css": "style.css",
     "author": "awaae001",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "homePage": "https://github.com/awaae001/SillyTavern-second-confirmation"
 }

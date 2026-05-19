@@ -1,18 +1,19 @@
 <div id="second_confirmation_settings" class="second-confirmation-settings">
     <div class="inline-drawer">
         <div class="inline-drawer-toggle inline-drawer-header">
-            <b>Second Confirmation</b>
+            <b data-i18n="Second Confirmation">Second Confirmation</b>
             <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
         </div>
         <div class="inline-drawer-content">
             <label class="checkbox_label second-confirmation-toggle" for="second_confirmation_enabled">
                 <input id="second_confirmation_enabled" type="checkbox" />
-                <span>Enable branch creation confirmation</span>
+                <span data-i18n="Enable Second Confirmation">Enable Second Confirmation</span>
             </label>
-            <div class="second-confirmation-hint">
-                Adds a confirmation popup before creating a chat branch from message actions or the alternate reply editor.
+            <div class="second-confirmation-hint" data-i18n="Adds a confirmation popup before certain actions. Uncheck to disable all confirmations.">
+                Adds a confirmation popup before certain actions. Uncheck to disable all confirmations.
             </div>
             <hr class="sysHR" />
+            <div id="second_confirmation_list" class="second-confirmation-list"></div>
         </div>
     </div>
 </div>

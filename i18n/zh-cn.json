@@ -1,0 +1,17 @@
+{
+    "Second Confirmation": "二次确认",
+    "Enable Second Confirmation": "启用二次确认",
+    "Adds a confirmation popup before certain actions. Uncheck to disable all confirmations.": "在执行特定操作前弹出确认窗口。取消勾选以禁用所有确认。",
+    "Confirm branch creation": "确认创建分支",
+    "Confirm closing chat": "确认关闭聊天",
+    "Confirm deleting chat": "确认删除聊天",
+    "Create Branch": "创建分支",
+    "Create a new branch from this message?": "从这条消息创建新分支？",
+    "Create": "创建",
+    "Cancel": "取消",
+    "Close Chat": "关闭聊天",
+    "Close the current chat? Unsaved temporary state may be lost.": "关闭当前聊天？未保存的临时状态将会丢失。",
+    "Close": "关闭",
+    "Delete Chat": "删除聊天",
+    "Delete the current chat? ": "删除当前聊天？"
+}
