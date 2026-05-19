@@ -45,6 +45,23 @@ const confirmationRules = [
         okButton: () => t`Create`,
         cancelButton: () => t`Cancel`,
     },
+    {
+        selector: '#option_close_chat',
+        event: 'click',
+        title: () => t`Close Chat`,
+        message: () => `<p>${t`Close the current chat? Unsaved temporary state may be lost.`}</p>`,
+        okButton: () => t`Close`,
+        cancelButton: () => t`Cancel`,
+    },
+    {
+        selector: '#dialogue_del_mes_ok',
+        event: 'click',
+        title: () => t`Delete Chat`,
+        message: () => `<p>${t`Delete the current chat? `}</p>`,
+        okButton: () => t`Close`,
+        cancelButton: () => t`Cancel`,
+    },
+
 ];
 
 /** @type {Map<string, WeakSet<Element>>} */
