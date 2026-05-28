@@ -8,6 +8,7 @@ const defaultSettings = Object.freeze({
         createBranch: true,
         closeChat: true,
         deleteChat: true,
+        regenerateMessage: true,
     },
 });
 
@@ -34,7 +35,16 @@ function loadSettings() {
         }
 
 
-        return { ...defaultSettings, ...parsedSettings };
+        return {
+            ...defaultSettings,
+            ...parsedSettings,
+            confirmations: {
+                ...defaultSettings.confirmations,
+                ...(parsedSettings.confirmations && typeof parsedSettings.confirmations === 'object'
+                    ? parsedSettings.confirmations
+                    : {}),
+            },
+        };
     } catch (error) {
         console.warn(`[${extensionName}] Failed to load settings. Using defaults.`, error);
         return { ...defaultSettings };
